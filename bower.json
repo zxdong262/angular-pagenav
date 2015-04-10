@@ -1,0 +1,35 @@
+{
+  "name": "angular-pagenav",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zxdong262/angular-pagenav",
+  "author": {
+    "email": "zxdong@gmail.com",
+    "name": "ZHAO Xudong",
+    "url": "http://html5beta.com"
+  },
+  "description": "a angular pagenav directive",
+  "bugs": "https://github.com/zxdong262/angular-pagenav/issues",
+  "main": "dist/angular-pagenav.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "pagenav"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.2.21"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.2.21",
+    "jquery": "^2.1.1"
+  }
+}
