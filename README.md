@@ -1,6 +1,11 @@
 # angular-pagenav
 a angular pagenav directive
 
+## get
+```bash
+bower install angular-pagenav
+```
+
 ## use
 
 ### reference it in html
@@ -36,9 +41,9 @@ angular.module('ctrl', [
                 ,Next: 'Next'
                 ,more:'...'
         }
-        ,url: opts.url || 'javascript:;' 
-        ,pageParam: opts.pageParam || 'p'
-        ,noFirstPageParam: opts.noFirstPageParam || false
+        ,url: opts.url || 'javascript:;' //page url
+        ,pageParam: opts.pageParam || 'p' //page param name, '/?p=2'
+        ,noFirstPageParam: opts.noFirstPageParam || false //when p=1, do not use it
         ,ngClick: true //ngclick event
     }
 })
