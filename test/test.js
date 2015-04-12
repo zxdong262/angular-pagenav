@@ -139,7 +139,7 @@ describe('angular-pagenav', function () {
 
 		it('basic', function() {
 			var elm = compileDirective('default')
-			expect(elm.find('a').length).toBeTruthy()
+			expect(elm.find('a').length).to.equal(5)
 		})
 
 		//todo events
@@ -150,47 +150,47 @@ describe('angular-pagenav', function () {
 
 		it('option maxLinkShow=6', function() {
 			var elm = compileDirective('max-link-6')
-			expect(elm.find('a').length === 6).toBeTruthy()
+			expect(elm.find('a').length === 6).to.equal(true)
 		})
 
 		it('option pageSize=25', function() {
 			var elm = compileDirective('page-size-25')
-			expect(elm.find('[data-page="20"]').length === 1).toBeTruthy()
+			expect(elm.find('[data-page="20"]').length === 1).to.equal(true)
 		})
 
 		it('option page=20', function() {
 			var elm = compileDirective('page-20')
-			expect(elm.find('span[data-page="20"]').length === 1).toBeTruthy()
+			expect(elm.find('span[data-page="20"]').length === 1).to.equal(true)
 		})
 
 		it('option total=1000', function() {
 			var elm = compileDirective('total-1000')
-			expect(elm.find('span[data-page="20"]').length === 1).toBeTruthy()
+			expect(elm.find('span[data-page="20"]').length === 1).to.equal(true)
 		})
 
 		it('option total=1000', function() {
 			var elm = compileDirective('total-1000')
-			expect(elm.find('span[data-page="20"]').length === 1).toBeTruthy()
+			expect(elm.find('span[data-page="20"]').length === 1).to.equal(true)
 		})
 
 		it('option lang(custom lang)', function() {
 			var elm = compileDirective('custom-lang')
 			,ht = elm.html()
-			expect(ht.indexOf('第') > -1).toBeTruthy()
-			expect(ht.indexOf('页, 共计') > -1).toBeTruthy()
-			expect(ht.indexOf('页') > -1).toBeTruthy()
-			expect(elm.find('.pagenav-link-next').text() === '》').toBeTruthy()
-			expect(elm.find('.pagenav-link-prev').text() === '《').toBeTruthy()
+			expect(ht.indexOf('第') > -1).to.equal(true)
+			expect(ht.indexOf('页, 共计') > -1).to.equal(true)
+			expect(ht.indexOf('页') > -1).to.equal(true)
+			expect(elm.find('.pagenav-link-next').text() === '》').to.equal(true)
+			expect(elm.find('.pagenav-link-prev').text() === '《').to.equal(true)
 		})
 
 		it('option url="/"', function() {
 			var elm = compileDirective('custom-url')
-			expect(elm.find('a[data-page="1"]').prop('href').indexOf('/?p=1') > -1).toBeTruthy()
+			expect(elm.find('a[data-page="1"]').prop('href').indexOf('/?p=1') > -1).to.equal(true)
 		})
 
 		it('option pageParam="pp"', function() {
 			var elm = compileDirective('custom-pageParam')
-			expect(elm.find('a[data-page="1"]').prop('href').indexOf('/?pp=1') > -1).toBeTruthy()
+			expect(elm.find('a[data-page="1"]').prop('href').indexOf('/?pp=1') > -1).to.equal(true)
 		})
 
 	})
