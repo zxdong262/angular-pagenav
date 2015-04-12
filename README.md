@@ -1,5 +1,9 @@
 # angular-pagenav
-a angular pagenav directive
+a angular pagenav directive.
+
+## demo & doc
+
+<a href="http://html5beta.com/apps/angular-pagenav.html">http://html5beta.com/apps/angular-pagenav.html</a>
 
 ## get
 ```bash
@@ -29,11 +33,8 @@ angular.module('ctrl', [
     this.pageSize = 20
     this.total = 500
     this.opts = {
-        pageSize: opts.pageSize || 10     //items to show per page
-        ,maxLinkShow: opts.maxLinkShow || 5    //how many links to render max
-        ,itemTotal: opts.itemTotal || 110      //how many items in total
-        ,page: opts.page || 1           //the page number 
-        ,lang: opts.lang || {          // lang
+        maxLinkShow:  5    //how many links to render max
+        ,lang: {          // lang
                 page: 'page'
                 ,afterCurrentPage: ', '
                 ,intotal: 'in total'
@@ -113,3 +114,4 @@ npm install
 bower install
 gulp test
 ```
+

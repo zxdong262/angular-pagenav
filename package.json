@@ -1,13 +1,13 @@
 {
   "name": "angular-pagenav",
   "description": "a angular pagenav directive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "angular",
     "pagenav"
   ],
   "main": "dist/angular-pagenav.js",
-  "homepage": "https://github.com/zxdong262/angular-pagenav",
+  "homepage": "http://html5beta.com/apps/angular-pagenav.html",
   "bugs": "https://github.com/zxdong262/angular-pagenav/issues",
   "author": {
     "email": "zxdong@gmail.com",

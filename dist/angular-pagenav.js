@@ -1,7 +1,7 @@
 /**
  * angular-pagenav
- * @version v0.0.1 - 2015-04-10
- * @link https://github.com/zxdong262/angular-pagenav
+ * @version v0.0.2 - 2015-04-12
+ * @link http://html5beta.com/apps/angular-pagenav.html
  * @author ZHAO Xudong (zxdong@gmail.com)
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
