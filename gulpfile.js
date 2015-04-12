@@ -5,7 +5,6 @@ var util = require('util')
 var gutil = require('gulp-util')
 var changed = require('gulp-changed')
 var pkg = require('./package.json')
-var chalk = require('chalk')
 var fs = require('fs')
 var rename = require('gulp-rename')
 var plumber = require('gulp-plumber')
@@ -45,7 +44,6 @@ gulp.task('clean:dist', function() {
 //
 var uglify = require('gulp-uglify')
 var ngAnnotate = require('gulp-ng-annotate')
-var ngmin = require('gulp-ngmin')
 var concat = require('gulp-concat-util')
 var sourcemaps = require('gulp-sourcemaps')
 gulp.task('scripts:dist', function() {
