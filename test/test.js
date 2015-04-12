@@ -18,7 +18,7 @@ describe('angular-pagenav', function () {
 
 	var templates = {
 		'default': {
-			element: '<span pagenav page="page" page-size="pageSize" total="total" options="opts"></span>'
+			element: '<span pagenav page="page" page-size="pageSize" total="total" options="opts"></span><div class="current">{{page}}</div>'
 			,scope: {
 				page: 1
 				,pageSize: 10
@@ -142,7 +142,17 @@ describe('angular-pagenav', function () {
 			expect(elm.find('a').length).to.equal(5)
 		})
 
-		//todo events
+		//click event
+		it('click event', function(done) {
+			var elm = compileDirective('default')
+			,p = elm.parent()
+			angular.element(elm.find('a.pagenav-link-next')[0]).triggerHandler('click')
+			setTimeout(function() {
+				expect(p.find('.current').text()).to.equal('2')
+				done()
+			}, 10)
+			
+		})
 
 	})
 
