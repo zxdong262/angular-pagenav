@@ -1,7 +1,7 @@
 {
   "name": "angular-pagenav",
   "description": "a angular pagenav directive",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "angular",
     "pagenav"

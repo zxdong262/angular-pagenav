@@ -1,6 +1,6 @@
 /**
  * angular-pagenav
- * @version v0.0.2 - 2015-04-12
+ * @version v0.0.2 - 2015-04-13
  * @link http://html5beta.com/apps/angular-pagenav.html
  * @author ZHAO Xudong (zxdong@gmail.com)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -18,7 +18,7 @@ angular.module('zPagenav', [])
 			,total: '='
 			,options: '='
 		}
-		,transclude: true
+		//,transclude: true
 		,link: function(scope, element, attrs) {
 
 			scope.$watch(function() {

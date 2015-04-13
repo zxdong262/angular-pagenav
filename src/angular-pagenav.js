@@ -11,7 +11,6 @@ angular.module('zPagenav', [])
 			,total: '='
 			,options: '='
 		}
-		,transclude: true
 		,link: function(scope, element, attrs) {
 
 			scope.$watch(function() {
