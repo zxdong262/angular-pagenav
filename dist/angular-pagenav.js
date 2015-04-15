@@ -1,6 +1,6 @@
 /**
  * angular-pagenav
- * @version v0.0.4 - 2015-04-15
+ * @version v0.0.5 - 2015-04-15
  * @link http://html5beta.com/apps/angular-pagenav.html
  * @author ZHAO Xudong (zxdong@gmail.com)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -71,7 +71,7 @@ angular.module('zPagenav', [])
 				else currentPageItemCount = y1?y1:perPage
 				
 				if(pageTotal>0) {
-					res = '<span class="pagenav-wrapper' + (pageTotal === 1?'only-one-page':'') + '"><span class="pagenav-desc">' + defaults.lang.page + '<span class="pagenav-current">' + page + '</span><span class="pagenav-acp">' + defaults.lang.afterCurrentPage + '</span><span class="pagenav-total">' + pageTotal + '</span> ' + defaults.lang.intotal + '</span><span class="pagenav-units">'
+					res = '<span class="pagenav-wrapper' + (pageTotal === 1?' only-one-page':'') + '"><span class="pagenav-desc">' + defaults.lang.page + '<span class="pagenav-current">' + page + '</span><span class="pagenav-acp">' + defaults.lang.afterCurrentPage + '</span><span class="pagenav-total">' + pageTotal + '</span> ' + defaults.lang.intotal + '</span><span class="pagenav-units">'
 					if(pageTotal <= maxLink) {
 						for(i = 1;i <= pageTotal;i++ ) {
 							var cls, isC, it

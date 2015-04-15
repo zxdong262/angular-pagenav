@@ -64,7 +64,7 @@ angular.module('zPagenav', [])
 				else currentPageItemCount = y1?y1:perPage
 				
 				if(pageTotal>0) {
-					res = '<span class="pagenav-wrapper' + (pageTotal === 1?'only-one-page':'') + '"><span class="pagenav-desc">' + defaults.lang.page + '<span class="pagenav-current">' + page + '</span><span class="pagenav-acp">' + defaults.lang.afterCurrentPage + '</span><span class="pagenav-total">' + pageTotal + '</span> ' + defaults.lang.intotal + '</span><span class="pagenav-units">'
+					res = '<span class="pagenav-wrapper' + (pageTotal === 1?' only-one-page':'') + '"><span class="pagenav-desc">' + defaults.lang.page + '<span class="pagenav-current">' + page + '</span><span class="pagenav-acp">' + defaults.lang.afterCurrentPage + '</span><span class="pagenav-total">' + pageTotal + '</span> ' + defaults.lang.intotal + '</span><span class="pagenav-units">'
 					if(pageTotal <= maxLink) {
 						for(i = 1;i <= pageTotal;i++ ) {
 							var cls, isC, it
