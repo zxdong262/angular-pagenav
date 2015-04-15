@@ -1,6 +1,6 @@
 /**
  * angular-pagenav
- * @version v0.0.2 - 2015-04-13
+ * @version v0.0.4 - 2015-04-15
  * @link http://html5beta.com/apps/angular-pagenav.html
  * @author ZHAO Xudong (zxdong@gmail.com)
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -18,7 +18,6 @@ angular.module('zPagenav', [])
 			,total: '='
 			,options: '='
 		}
-		//,transclude: true
 		,link: function(scope, element, attrs) {
 
 			scope.$watch(function() {
@@ -41,7 +40,7 @@ angular.module('zPagenav', [])
 				var defaults = {
 					pageSize: opts.pageSize || 10     //items to show per page
 					,maxLinkShow: opts.maxLinkShow || 5    //how many links to render max
-					,itemTotal: opts.itemTotal || 110      //how many items in total
+					,itemTotal: opts.itemTotal || 0      //how many items in total
 					,page: opts.page || 1           //the page number 
 					,lang: opts.lang || {          // lang
 							page: 'page'

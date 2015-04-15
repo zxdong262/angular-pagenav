@@ -33,7 +33,7 @@ angular.module('zPagenav', [])
 				var defaults = {
 					pageSize: opts.pageSize || 10     //items to show per page
 					,maxLinkShow: opts.maxLinkShow || 5    //how many links to render max
-					,itemTotal: opts.itemTotal || 110      //how many items in total
+					,itemTotal: opts.itemTotal || 0      //how many items in total
 					,page: opts.page || 1           //the page number 
 					,lang: opts.lang || {          // lang
 							page: 'page'
