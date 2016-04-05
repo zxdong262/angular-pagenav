@@ -1,4 +1,6 @@
 # angular-pagenav
+[![Build Status](https://travis-ci.org/zxdong262/angular-pagenav.svg?branch=master)](https://travis-ci.org/zxdong262/angular-pagenav)
+
 a angular pagenav directive.
 
 ## demo & doc
